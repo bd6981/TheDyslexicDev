@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import BlogPost from "./BlogPost";
+import '../App.css'
 
 function Blog() {
   const [posts, setPosts] = useState([]);
@@ -21,7 +22,7 @@ function Blog() {
           <BlogPost key={post.id} post={post} />
         ))}
       </div>
-      <Link to="/new-post">Create New Post</Link>
+      <Link to="/NewPost">Create New Post</Link>
     </div>
   );
 }

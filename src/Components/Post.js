@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
+import "../App.css";
+import NewPost from './NewPost'
 function Post() {
   const { id } = useParams();
   const [post, setPost] = useState({});
@@ -15,6 +16,7 @@ function Post() {
 
   return (
     <div>
+      <NewPost/>
       <h1>{post.title}</h1>
       <p>
         By {post.author} on {post.date}
