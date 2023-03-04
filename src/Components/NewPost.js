@@ -21,7 +21,7 @@ function NewPost() {
     event.preventDefault();
      
     // Send a POST request to the backend API endpoint using fetch
-    const response = await fetch("/api/posts", {
+    const response = await fetch("/api/v1/posts", {
       method: "POST", // Use POST method
       headers: {
         "Content-Type": "application/json", // Set request header to JSON format

@@ -8,7 +8,7 @@ function Blog() {
 
   useEffect(() => {
     // Fetch your blog posts data from your API or data file
-    fetch("/api/posts")
+    fetch("/api/v1/posts")
       .then((response) => response.json())
       .then((data) => setPosts(data))
       .catch((error) => console.log(error));
