@@ -25,8 +25,6 @@ function Home() {
 
   return (
     <div>
-   
-
       <Accordion>
         <h1>Welcome to My Blog</h1>
         <p>
