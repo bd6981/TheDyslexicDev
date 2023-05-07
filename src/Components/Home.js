@@ -36,7 +36,7 @@ function Home() {
       </Accordion>
 
       <Container>
-        <h2>Featured Posts</h2>
+        <h2>Featured Post</h2>
         <Carousel>
           {posts.slice(0, 3).map((post) => (
             <Carousel.Item key={post.id}>
